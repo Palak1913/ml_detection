@@ -56,12 +56,10 @@ def save_data(data_path : str,train_data : pd.DataFrame,test_data : pd.DataFrame
 
 
 
-print("____")
-
 
 
 def main():
-    test_size = load_params(params_path = 'params1.yaml')
+    test_size = load_params(params_path = 'params.yaml')
     df = read_data(url = 'https://raw.githubusercontent.com/campusx-official/jupyter-masterclass/main/tweet_emotions.csv')
     final_df = process(df)
     

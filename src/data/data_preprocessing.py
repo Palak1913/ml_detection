@@ -8,7 +8,7 @@ import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer, WordNetLemmatizer
-from pip .feature_extraction.text import CountVectorizer
+from  sklearn.feature_extraction.text import CountVectorizer
 
 # fetch data from raw
 
@@ -90,7 +90,7 @@ def normalized_sentence(sentence):
 train_processed_data = normalize_text(train_data)
 test_processed_data = normalize_text(test_data)
 
-data_path = os.path.join('data','procressed')
+data_path = os.path.join('data','processed')
 os.makedirs(data_path)
 ## store data
 

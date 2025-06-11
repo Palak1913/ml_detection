@@ -8,8 +8,8 @@ import yaml
 
 max_features = yaml.safe_load(open('params.yaml','r'))['feature_engineering']['max_features']
 
-train_data  = pd.read_csv('./data/procressed/train_processed_data.csv')
-test_data  = pd.read_csv('./data/procressed/test_processed_data.csv')
+train_data  = pd.read_csv('./data/processed/train_processed_data.csv')
+test_data  = pd.read_csv('./data/processed/test_processed_data.csv')
 
 train_data.fillna('',inplace=True)
 test_data.fillna('',inplace=True)
